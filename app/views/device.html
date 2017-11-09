@@ -1,0 +1,24 @@
+<div class="row">
+	<div class="col-md-4">
+		<h3>Gestion : </h3>
+		<a href="#!/device/{{idDevice}}/graph">Voir graphique des Evènements</a><br/>
+	    <a href="#!/device/{{idDevice}}/led-manager">Gérer la Led</a>
+
+	    <h3>Caractéristiques : </h3>
+	    <ul class="list-group">
+	        <li class="list-group-item" ng-repeat="(key, value) in device" ng-if="key!='_id'&&key!='__v'">{{key}}&nbsp;:&nbsp;{{value}}</li>
+	    </ul>
+	</div>
+
+	<div class="col-md-8">   
+
+		<h3>Evènements : </h3>
+	    <ul class="list-group-item">
+			<li ng-repeat='event in deviceEvents' class="collection-item list-group-item">
+				{{event.name}} : <i>{{event._id}}</i>&nbsp;
+				Publie le : {{event.published_at}} &nbsp;
+				Valeur : {{event.data}}
+			</li>
+		</ul>
+	</div>
+</div>

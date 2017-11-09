@@ -1,0 +1,34 @@
+<div class="row">
+
+	<div class="col-md-6">
+		<div>
+			Objets connectés : <small>(connectez un nouvel objets connectés pour l'enregistrer)</small>
+		</div>
+		<br/>
+		<div>
+			<ul class="list-group">
+				<li class="list-group-item" ng-repeat="p in devicesList" id="item{{n._id}}" >
+					<a class="pull-left" ng-href="#!/device/{{p._id}}">{{p.name | uppercase}}&nbsp;{{p.id}}</a>
+					
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="col-md-6">
+		<div>
+			Utilisateurs : <a class="btn btn-xs btn-danger pull-right" href="#!/user/add">Ajouter un utilisateur</a>
+		</div>
+		<br/>
+		<div>
+			<ul class="list-group">
+				<li class="list-group-item" ng-repeat="n in usersList"id="item{{n._id}}" >
+					<a class="pull-left" ng-href="#!/user/profile/{{n._id}}">{{n.nom | uppercase}}&nbsp;{{n.prenom}}</a>
+					<a class="btn btn-xs btn-danger pull-right" ng-click="deleteUser(n, $index)">supprimer</a>
+					<a class="btn btn-xs btn-danger pull-right" ng-href="#!/user/update/{{n._id}}">modifier</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+		<!-- <div data-my-first-dir></div> -->
+</div>

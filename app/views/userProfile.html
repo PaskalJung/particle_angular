@@ -1,0 +1,9 @@
+<div class="row">
+
+    
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="(key, value) in monProfil" ng-if="key!='_id'&&key!='__v'">{{key}}&nbsp;:&nbsp;{{value}}</li>
+    </ul>
+    <a class="btn btn-danger pull-right" ng-href="#!/eleve/update/{{monProfil._id}}">modifier</a>
+    <div data-my-first-dir></div>
+</div>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Tp final du cours de Javascript de l'IFA">
+        <meta name="author" content="Pascal Jung">
+        
+        <title>TP JS</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!-- Font-awesome CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <!-- custom CSS -->
+        <link rel="stylesheet" type="text/css" href="/app/css/style.css">
+        
+        <style type="text/css">
+            :root #carbonads-container,
+            :root #content > #right > .dose > .dosesingle,
+            :root #content > #center > .dose > .dosesingle,
+            :root .carbonad
+            { display: none !important; }
+            li {
+              height: 40px;
+            }
+            .btn-xs {
+              margin-left: 5px;
+            }
+        </style>
+        
+        <!-- Angular -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.js"></script>
+        
+        <!-- Socket.io -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+        
+        <!-- Moment.js -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/locale/fr.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-moment/1.0.1/angular-moment.min.js"></script>
+
+    
+    </head>
+
+    <body ng-app="myApp">
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#!/">Home</a>
+
+                </div>
+
+                
+            </div>
+        </nav><!--/.nav -->
+
+
+        <div class="container">
+
+            <div ng-view></div>
+            <br/><br/>
+        </div> <!-- /container -->
+
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+        <script src="app/myApp.js"></script>
+        <script src="app/service/userService.js"></script>
+    	<script src="app/service/deviceService.js"></script>
+    	<script src="app/controller/static.ctrl.js"></script>
+    	<script src="app/controller/user.ctrl.js"></script>
+    	<script src="app/controller/device.ctrl.js"></script>
+	
+    </body>
+
+</html>

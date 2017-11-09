@@ -1,0 +1,22 @@
+{
+  "name": "testJs",
+  "version": "1.0.0",
+  "description": "ma description",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "echo \"start dev server\" && nodemon server.js"
+  },
+  "author": "pascal jung",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongodb": "^2.2.30",
+    "mongoose": "^4.11.4",
+    "nodemon": "^1.11.0",
+    "particle-api-js": "^6.6.2",
+    "socket.io": "^2.0.4",
+    "twitter": "^1.7.1"
+  }
+}

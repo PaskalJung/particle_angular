@@ -1,0 +1,70 @@
+<div class="row">
+	<form class="form-horizontal" ng-submit="addEleve(eleve)" role="form"> 
+		<div class="form-group">
+			<label for="nom">Nom</label>
+			<input type="text" class="form-control" ng-model="eleve.nom">
+		</div>
+		<div class="form-group">
+			<label for="nom">Prénom</label>
+			<input type="text" class="form-control" ng-model="eleve.prenom">
+		</div>
+		<div class="form-group">
+			<label for="javascript">Javascript</label>
+			<input type="text" class="form-control" ng-model="eleve.javascript">
+		</div>
+		
+		
+		<div class="form-group">
+			<label for="fav_web">Site Web favori</label>
+			<input type="text" class="form-control" ng-model="eleve.fav_web">
+		</div>
+		
+		<div class="form-group">
+			<label for="fav_web_why">Pourquoi ce site ?</label>
+			<input type="text" class="form-control" ng-model="eleve.fav_web_why">
+		</div>
+		
+		<div class="form-group">
+				<label for="fav_app">Application favorite</label>
+				<input type="text" class="form-control" ng-model="eleve.fav_app">
+			</div>
+			
+		<div class="form-group">
+			<label for="fav_app_why">Pourquoi cette application ?</label>
+			<input type="text" class="form-control" ng-model="eleve.fav_app_why">
+		</div>
+		
+		<div class="form-group">
+			<label for="before_ifa">Qu'avez vous fait avant l'Ifa ?</label>
+			<input type="text" class="form-control" ng-model="eleve.before_ifa">
+		</div>
+		
+		<div class="form-group">
+			<label for="why_ifa">Pourquoi l'Ifa ?</label>
+			<input type="text" class="form-control" ng-model="eleve.why_ifa">
+		</div>
+		
+		<div class="form-group">
+			<label for="contact_mail">Adresse Email</label>
+			<input type="email" class="form-control" ng-model="eleve.contact_mail">
+		</div>
+		
+		<input type="submit" class="btn btn-default btn-primary pull-right" value="Envoyer">
+		
+	</form>
+	
+</div>
+
+
+<!-- 
+<div>
+		<form name="myForm">
+			<input type="text" ng-model="person.prenom" ><br>
+			<input type="text" ng-model="person.nom" ><br>
+			<input type="email" ng-model="person.email" ><br>
+			
+			<!-- <button type="submit"></button> -->
+		<!-- </form>
+		<button ng-click="submitForm()">valider</button> -->
+		<!-- {{ person.firstName + " " + person.lastName }}<br> -->
+	<!-- </div>  -->
