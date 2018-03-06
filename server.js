@@ -18,17 +18,17 @@ var Particle = require('particle-api-js');
 var particle = new Particle();
 
 var token;
-var myDevice = '1e0024001047343438323536';
+var myDevice = '';
 
 // twitter
 var Twitter = require('twitter');
 
 //connection app twitter
 var keys = {
-    consumer_key: '1QFT4Q3sTFiJU2nK3MoS0ptoC',
-    consumer_secret: 'fRBydzkpGAPV11oAPuTajJsitXsJkFMXXFKKmvP1m92y5RBs5Q',
-    access_token_key: '258522301-GSh65xHxg1BwgDxPUAUyo9ByrCZKGjNz022w0fZC',
-    access_token_secret: 'TR3MXqYRFheN8BhFsSvMbVUBkvCCfrpD5BGqegDNI8dmH'
+    consumer_key: 'XXX',
+    consumer_secret: 'xxx',
+    access_token_key: 'xxx',
+    access_token_secret: 'xxx'
 };
 
 //on instancie un nouvel objet Twitter avec la connection
@@ -37,7 +37,7 @@ var client = new Twitter(keys);
 
 
 // j'instance la connection mongo 
-promise = mongoose.connect('mongodb://localhost:27017/TestFinalJs', {
+promise = mongoose.connect('mongodb://localhost:27017/particleJS', {
     useMongoClient: true,
 });
 console.log(promise.status);
@@ -215,8 +215,8 @@ app.post('/event', function(req,res){
 });
 
 // Particle
-
-particle.login({username:'paskal.jung@gmail.com',password:'tetete57'}).then(
+// 
+particle.login({username:'iparticle-email',password:'particle-pwd'}).then(
     function(data){
         
         token = data.body.access_token;
